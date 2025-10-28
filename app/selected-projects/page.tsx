@@ -69,7 +69,7 @@ export default function SelectedProjects() {
 
   return (
     <motion.main
-      className="space-y-24 overflow-hidden"
+      className="space-y-24 "
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -79,7 +79,7 @@ export default function SelectedProjects() {
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <div className="grid grid-cols-1 gap-8 text-zinc-400 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 text-zinc-400 md:grid-cols-2 ">
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
               <p>With a focus in design, art direction,
@@ -149,7 +149,7 @@ export default function SelectedProjects() {
               width: isHovering ? 80 : 16,
               height: isHovering ? 32 : 16,
             }}
-            className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+            className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40 "
           >
             <AnimatePresence>
               {isHovering ? (
@@ -157,10 +157,10 @@ export default function SelectedProjects() {
                   initial={{ opacity: 0, scale: 0.6 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.6 }}
-                  className="inline-flex w-full items-center justify-center"
+                  className="inline-flex w-full items-center justify-center "
                 >
                   <div className="inline-flex items-center text-sm text-white dark:text-black">
-                    More <PlusIcon className="ml-1 h-4 w-4" />
+                    View <PlusIcon className="ml-1 h-4 w-4" />
                   </div>
                 </motion.div>
               ) : null}
@@ -230,7 +230,7 @@ export default function SelectedProjects() {
             </video>
           </MediaBlock>
 
-          <div className="flex flex-wrap justify-center pb-5">
+          <div className="flex flex-wrap justify-center pb-5 ">
             {['olla-image-1.png', 'olla-image-7.png', 'olla-image-3.png'].map(
               (img, i) => (
                 <div key={i} className="w-1/3">
