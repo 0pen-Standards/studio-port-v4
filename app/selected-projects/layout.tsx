@@ -1,4 +1,5 @@
 'use client'
+import { Header } from './header'
 
 export default function SelectedProjects({
   children,
@@ -7,7 +8,10 @@ export default function SelectedProjects({
 }) {
   return (
 
-     <section>{children}</section>
+     <section>
+      <Header />
+      {children}
+      </section>
    
   )
 }
