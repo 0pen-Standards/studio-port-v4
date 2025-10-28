@@ -7,6 +7,7 @@ import { Cursor } from '@/components/motion-primitives/cursor'
 import { PlusIcon } from 'lucide-react'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { BLOG_POSTS, EMAIL } from '../data'
+import GoogleDriveEmbed from '@/components/GoogleDriveEmbed'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -39,7 +40,6 @@ const FullWidthImage = ({ src, alt }: { src: string; alt: string }) => (
   </div>
 )
 
-
 const MediaBlock = ({
   children,
   width = 'w-3/5',
@@ -69,35 +69,37 @@ export default function SelectedProjects() {
 
   return (
     <motion.main
-      className="space-y-24 "
+      className="space-y-24"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
     >
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
-        <div className="grid grid-cols-1 gap-8 text-zinc-400 md:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-8 text-zinc-400 md:grid-cols-2">
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
-              <p>With a focus in design, art direction,
-            and strategy, partnered with brands and organizations on projects that range from global campaigns and culturally grounded initiatives alike—always driven by insight, curiosity, and craft. My work includes launching brands and products for tech and
-            retail companies, designing publications and editorial experiences
-            with cultural institutions, developing digital platforms for
-            startups and artists, and creating campaigns and pitches that
-            engage audiences while delivering measurable impact for
-            stakeholders.</p><br></br>
-            
+              <p>
+                With a focus in design, art direction, and strategy, partnered
+                with brands and organizations on projects that range from global
+                campaigns and culturally grounded initiatives alike—always
+                driven by insight, curiosity, and craft. My work includes
+                launching brands and products for tech and retail companies,
+                designing publications and editorial experiences with cultural
+                institutions, developing digital platforms for startups and
+                artists, and creating campaigns and pitches that engage
+                audiences while delivering measurable impact for stakeholders.
+              </p>
+              <br></br>
 
-            <p className="mb-5">
-            Available to collaborate:{' '}
-            <a className="underline" href={`mailto:${EMAIL}`}>
-              {EMAIL}
-            </a>
-          </p>
-          
+              <p className="mb-5">
+                Available to collaborate:{' '}
+                <a className="underline" href={`mailto:${EMAIL}`}>
+                  {EMAIL}
+                </a>
+              </p>
             </div>
           </div>
           <div className="bg-[rgba(255,255,255,0.05)]">
@@ -115,14 +117,14 @@ export default function SelectedProjects() {
               <br />
               2013—2014&nbsp;&nbsp;Brook Stevens Inc.
             </p>
-<br></br>
-              <h3 className="mb-5 text-lg font-medium">Selected Clients</h3>
-              <p>
-                adidas, American Express, Brut, DSG, Google, Lenovo, Levi's,
-                Madden, Merrell, Microsoft, Mini USA, Municipal, National
-                Association of Realtors, NBA, NCAA, Nike, Reign, SAP, Sapporo,
-                Spotify, The North Face, The Olympics Channel, The Third Rail
-              </p>
+            <br></br>
+            <h3 className="mb-5 text-lg font-medium">Selected Clients</h3>
+            <p>
+              adidas, American Express, Brut, DSG, Google, Lenovo, Levi's,
+              Madden, Merrell, Microsoft, Mini USA, Municipal, National
+              Association of Realtors, NBA, NCAA, Nike, Reign, SAP, Sapporo,
+              Spotify, The North Face, The Olympics Channel, The Third Rail
+            </p>
           </div>
         </div>
       </motion.section>
@@ -149,7 +151,7 @@ export default function SelectedProjects() {
               width: isHovering ? 80 : 16,
               height: isHovering ? 32 : 16,
             }}
-            className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40 "
+            className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
           >
             <AnimatePresence>
               {isHovering ? (
@@ -157,7 +159,7 @@ export default function SelectedProjects() {
                   initial={{ opacity: 0, scale: 0.6 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.6 }}
-                  className="inline-flex w-full items-center justify-center "
+                  className="inline-flex w-full items-center justify-center"
                 >
                   <div className="inline-flex items-center text-sm text-white dark:text-black">
                     View <PlusIcon className="ml-1 h-4 w-4" />
@@ -213,24 +215,16 @@ export default function SelectedProjects() {
           </motion.section>
         </div>
       </div>
-         <motion.section
+      <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
       >
         <>
           <MediaBlock>
-            <video
-              className="h-auto w-full object-contain"
-              controls
-              controlsList="nodownload noremoteplayback"
-              poster="/project/olla/olla-image-11.png"
-              preload="auto"
-            >
-              <source src="/project/olla/OLLA-video-01.mp4" type="video/mp4" />
-            </video>
+<GoogleDriveEmbed fileId="1NGTovHYnt_DTAF40ia-xtC17cu-w7tmj" />
           </MediaBlock>
 
-          <div className="flex flex-wrap justify-center pb-5 ">
+          <div className="flex flex-wrap justify-center pb-5">
             {['olla-image-1.png', 'olla-image-7.png', 'olla-image-3.png'].map(
               (img, i) => (
                 <div key={i} className="w-1/3">
@@ -277,7 +271,7 @@ export default function SelectedProjects() {
               Palm NFT Studio Socials, Branding
             </p>
           </div>
-                <MediaBlock>
+          <MediaBlock>
             <Image
               src="/project/misc/nouhtrangthao-vice-waypoint.jpg"
               alt="I-D AZLA"
@@ -304,18 +298,7 @@ export default function SelectedProjects() {
           </MediaBlock>
 
           <MediaBlock>
-            <video
-              className="h-auto w-full object-contain"
-              controls
-              controlsList="nodownload noremoteplayback"
-              poster="/project/give-and-go/g-league-give-and-go-poster.png"
-              preload="auto"
-            >
-              <source
-                src="/project/give-and-go/g-league-give-and-go.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <GoogleDriveEmbed fileId="1RPtwX1plWAtfaTg5OFyuKiKEo2sY372d" />
           </MediaBlock>
           <div className="mx-auto w-full">
             <Image
@@ -382,18 +365,7 @@ export default function SelectedProjects() {
           </div>
 
           <MediaBlock>
-            <video
-              className="h-auto w-full object-contain"
-              controls
-              controlsList="nodownload noremoteplayback"
-              poster="/project/misc/nouhtrangthao-the-north-face-poster.png"
-              preload="auto"
-            >
-              <source
-                src="/project/misc/nouhtrangthao-the-north-face-5.mp4"
-                type="video/mp4"
-              />
-            </video>
+            <GoogleDriveEmbed fileId="1MfGoI838gjjjivhLdz8py1mNBm2djxDJ" />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               The North Face—The Invisible Wall, Campaign Branding, Motion
             </p>
@@ -497,6 +469,5 @@ export default function SelectedProjects() {
         </>
       </motion.section>
     </motion.main>
-    
   )
 }

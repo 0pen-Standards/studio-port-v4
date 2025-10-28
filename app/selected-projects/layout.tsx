@@ -1,5 +1,6 @@
 'use client'
-import { Header } from '../header'
+
+import Link from 'next/link'
 
 export default function SelectedProjects({
   children,
@@ -7,11 +8,14 @@ export default function SelectedProjects({
   children: React.ReactNode
 }) {
   return (
-
-     <section>
-      <Header />
+    <section>
+      <Link
+        href="/selected-projects"
+        className="font-medium text-black dark:text-white"
+      >
+        Nouhtrang Thao
+      </Link>
       {children}
-      </section>
-   
+    </section>
   )
 }

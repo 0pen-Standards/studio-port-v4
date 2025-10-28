@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
-import Analytics from './analytics'
 import tF from 'next/font/local';
+import { Header } from './header';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -35,10 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+       <Header />
       <body suppressHydrationWarning
         className={`${tf.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
-           <Analytics />
         <ThemeProvider
           enableSystem={true}
           attribute="class"
