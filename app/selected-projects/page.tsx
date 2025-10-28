@@ -74,32 +74,7 @@ export default function SelectedProjects() {
       initial="hidden"
       animate="visible"
     >
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
-        <div className="flex-1 bg-[rgba(255,255,255,0.05)] text-zinc-400">
-          <p>
-            Through collaborations with a wide range of brands and
-            organizations, projects span global campaigns and culturally
-            grounded initiatives alike—always driven by insight, curiosity, and craft. With a focus in design, art direction,
-            and strategy encompasses launching brands and products for tech and
-            retail companies, designing publications and editorial experiences
-            with cultural institutions, developing digital platforms for
-            startups and artists, and creating campaigns and pitches that
-            captivate audiences while delivering measurable impact for
-            stakeholders.<br></br>
-            <br></br>
-          </p>
 
-          <p className="mb-5">
-            Available to collaborate:{' '}
-            <a className="underline" href={`mailto:${EMAIL}`}>
-              {EMAIL}
-            </a>
-          </p>
-        </div>
-      </motion.section>
 
       <motion.section
         variants={VARIANTS_SECTION}
@@ -108,13 +83,22 @@ export default function SelectedProjects() {
         <div className="grid grid-cols-1 gap-8 text-zinc-400 md:grid-cols-2">
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
-              <h3 className="mb-5 text-lg font-medium">Selected Clients</h3>
-              <p>
-                adidas, American Express, Brut, DSG, Google, Lenovo, Levi's,
-                Madden, Merrell, Microsoft, Mini USA, Municipal, National
-                Association of Realtors, NBA, NCAA, Nike, Reign, SAP, Sapporo,
-                Spotify, The North Face, The Olympics Channel, The Third Rail
-              </p>
+              <p>With a focus in design, art direction,
+            and strategy, partnered with brands and organizations on projects that range from global campaigns and culturally grounded initiatives alike—always driven by insight, curiosity, and craft. My work includes launching brands and products for tech and
+            retail companies, designing publications and editorial experiences
+            with cultural institutions, developing digital platforms for
+            startups and artists, and creating campaigns and pitches that
+            engage audiences while delivering measurable impact for
+            stakeholders.</p><br></br>
+            
+
+            <p className="mb-5">
+            Available to collaborate:{' '}
+            <a className="underline" href={`mailto:${EMAIL}`}>
+              {EMAIL}
+            </a>
+          </p>
+          
             </div>
           </div>
           <div className="bg-[rgba(255,255,255,0.05)]">
@@ -132,6 +116,14 @@ export default function SelectedProjects() {
               <br />
               2013—2014&nbsp;&nbsp;Brook Stevens Inc.
             </p>
+<br></br>
+              <h3 className="mb-5 text-lg font-medium">Selected Clients</h3>
+              <p>
+                adidas, American Express, Brut, DSG, Google, Lenovo, Levi's,
+                Madden, Merrell, Microsoft, Mini USA, Municipal, National
+                Association of Realtors, NBA, NCAA, Nike, Reign, SAP, Sapporo,
+                Spotify, The North Face, The Olympics Channel, The Third Rail
+              </p>
           </div>
         </div>
       </motion.section>
