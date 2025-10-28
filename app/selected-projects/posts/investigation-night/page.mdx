@@ -1,0 +1,57 @@
+import { ImageGrid } from '@/components/ImageGrid'
+import GoogleDriveEmbed from '@/components/GoogleDriveEmbed'
+import Image from 'next/image'
+
+export const metadata = {
+  title: 'Investation Night',
+  description:
+    'Investigation Night is Vice TV’s new documentary block uncovering unseen sides of true crime—the overlooked evidence, untold motives, and people behind the stories that haunt us. More than a collection of cases, it’s an invitation to look closer.',
+  alternates: {
+    canonical: '/selected-projects/projects/investation-night',
+  },
+}
+
+# Investation Night
+
+<section className="grid md:grid-cols-2 gap-8 my-8">
+  <div className="bg-[rgba(255,255,255,0.05)]">
+Investigation Night is Vice TV’s new documentary block uncovering unseen sides of true crime—the overlooked evidence, untold motives, and people behind the stories that haunt us. More than a collection of cases, it’s an invitation to look closer.
+\
+\
+Our challenge was to design a visual identity that captured the tension and intrigue of investigation itself. Drawing inspiration from the analog rituals of detective work—notes in the margins, red string, scrawled connections—we built a design system rooted in curiosity and process.
+\
+\
+An expressive type treatment and library of gestural marks evoke the tactile nature of sifting through evidence, while a versatile image approach unifies diverse source material into one cohesive visual world. The result balances grit with clarity, bringing order to chaos and consistency across every on-air and digital touchpoint.
+</div>
+  <div>
+    <div className="bg-[rgba(255,255,255,0.05)]">
+         **Production**
+    - VICE
+  - GrandArmy 
+    \
+    \
+    **Service**
+    - Show Package
+\
+\
+    **Collaborator**
+      - Assaf Clements
+  </div>
+  </div>
+</section>
+
+<div className="grid grid-cols-1 md:grid-cols-2">
+<GoogleDriveEmbed fileId="1J8uPIp_O09TAoLzsLVQC3qsFcJRbqOro"/>
+<GoogleDriveEmbed fileId="1HM2CfELXf-G-QHBlN-ooFFiFtAZzC-ot"/>
+</div>
+
+<ImageGrid
+  images={[
+    { src: '/project/investigation-night/vice_tv_investigation_night_styleframe-01.avif', alt: 'investigation-night still 1' },
+    { src: '/project/investigation-night/vice_tv_investigation_night_styleframe-02.png', alt: 'investigation-night still 3' },
+    { src: '/project/investigation-night/vice_tv_investigation_night_styleframe-03.webp', alt: 'investigation-night still 2' },
+
+  ]}
+/>
+
+

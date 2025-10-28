@@ -1,0 +1,47 @@
+import { ImageGrid } from '@/components/ImageGrid'
+import { ImageGridFull } from '@/components/ImageGridFull'
+import Image from 'next/image'
+
+export const metadata = {
+  title: 'Only Lovers Left Alive',
+  description:
+    'Aescape introduced a category-defining product: AI-powered massage technology designed to deliver personalized recovery. The brand needed a visual language to match—one that communicated innovation without losing the calming essence of wellness.',
+  alternates: {
+    canonical: '/projects/aescape',
+  },
+}
+
+# ONLY LOVERS LEFT ALIVE 🥀
+
+<section className="grid md:grid-cols-2 gap-8 my-8">
+  <div>
+
+In Luce Irigaray’s essay “When Our Lips Speak Together,” translated by Carolyn Burke, Irigaray writes, “We must wait for the return of ‘I love.’ Perhaps for a long time, forever.”
+\
+\
+This three-hour, orgianzed by Lara Mimosa Montes is one day workshop tribute to the fantasy of forever and the high romanticism of ‘til death do us apart. A gathering on Valentine’s Day not to celebrate love and all its generic fanfare, but rather to consider what Roland Barthes’ described in A Lover’s Discourse as “the dark interior of love.” 
+\
+\
+Participants can expect to discuss excerpts of works by Dodie Bellamy, Ariana Reines, Andre Breton, Luce Irigaray, Roland Barthes, and draft new writings. Alongside these texts, the workshop works through some of our own theories about passion, desire and devotion.
+
+  </div>
+<div>
+  <div>
+    **Service**
+    - Design
+  </div>
+</div>
+</section>
+<div className="flex mx-auto items-center justify-center">
+<video className="w-1/2 h-auto object-contain" controls controlsList="nodownload noremoteplayback" poster="" preload="auto">
+    <source src="/project/olla/OLLA-video-01.mp4" type="video/mp4" />
+</video>
+</div>
+
+<ImageGrid
+  images={[
+    { src: '/project/olla/olla-image-1.png', alt: 'oola still 1' },
+    { src: '/project/olla/olla-image-3.png', alt: 'oola still 2' },
+    { src: '/project/olla/olla-image-4.png', alt: 'oola still 3' },
+  ]}
+/>
