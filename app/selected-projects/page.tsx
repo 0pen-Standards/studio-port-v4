@@ -69,7 +69,7 @@ export default function SelectedProjects() {
 
   return (
     <motion.main
-      className="space-y-24"
+      className="space-y-24 overflow-hidden"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
