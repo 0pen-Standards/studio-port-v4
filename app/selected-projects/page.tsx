@@ -75,7 +75,6 @@ export default function SelectedProjects() {
       animate="visible"
     >
 
-
       <motion.section
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}

@@ -20,6 +20,17 @@
   }
 }
 
+@font-face {
+  font-family: 'TF';
+  src: url('../public/font/NHaasGroteskTXStd-65Md.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: 'TF', sans-serif;
+}
+
 :root {
   --sh-class: #7aa2f7;
   --sh-sign: #89ddff;

@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from 'next-themes'
 import Analytics from './analytics'
+import tF from 'next/font/local';
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -22,15 +22,11 @@ export const metadata: Metadata = {
   description:  'Nouhtrang Thao — Designer',
 };
 
-const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
+const tf = tF({
+  src: '../public/font/NHaasGroteskTXStd-65Md.woff2', // adjust path if needed
+  variable: '--font-TF',
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
@@ -40,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className={`${tf.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
            <Analytics />
         <ThemeProvider
@@ -49,7 +45,7 @@ export default function RootLayout({
           storageKey="theme"
           defaultTheme="system"
         >
-          <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
+          <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-TF)]">
             <div className="relative mx-auto w-full max-w-screen-3xl flex-1 px-4 pt-4">
               
               {children}
