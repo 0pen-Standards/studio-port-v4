@@ -1,0 +1,50 @@
+import { ImageGrid } from '@/components/ImageGrid'
+import { ImageGridFull } from '@/components/ImageGridFull'
+import Image from 'next/image'
+
+export const metadata = {
+  title: 'Fellow Wanderer: Isabella Stewart Gardners Travel Albums',
+  description:
+    'Fellow Wanderer brings together nearly thirty of Gardner’s striking travelogues, spanning some thirty-nine countries and offering invaluable perspective on the global influences on this legendary collector and patron of the arts.',
+  alternates: {
+    canonical: '/selected-projects/projects/fellow-wanderer',
+  },
+}
+
+# Fellow Wanderer: Isabella Stewart Gardner's Travel Albums
+
+<section className="grid md:grid-cols-2 gap-8 my-8">
+  <div className="bg-[rgba(255,255,255,0.05)]">
+In 1865, art collector and philanthropist Isabella Stewart Gardner (1840–1924) lost her only child to pneumonia at less than two years old. In an effort to rouse her from depression, Gardner and her husband, Jack, travelled to northern Europe and Russia. It was the first of many trips abroad that would eventually take her from the Middle East to Asia—trips that she documented in exquisitely crafted collaged travel albums. Fellow Wanderer brings together nearly thirty of Gardner’s striking travelogues, spanning some thirty-nine countries and offering invaluable perspective on the global influences on this legendary collector and patron of the arts.
+\
+\
+This book features beautiful facsimiles of Gardner’s travel albums—largely unpublished until now—along with essays by leading scholars who place these diaries and sketchbooks within the context of the art and culture of Europe, the Middle East, and Asia in the nineteenth century. The essays explore a host of topics, such as Gardner’s engagement with world religions while abroad, how she incorporated designs and ideas from around the globe into her Boston museum, and the ways in which the imperial power structures of the era facilitated her travels.
+\
+\
+Lushly illustrated, Fellow Wanderer provides a uniquely intimate look at how Gardner’s rich and diverse experiences abroad instilled her collecting and patronage with a truly global vision of art.
+
+  </div>
+<div>
+  <div>
+    <div className="bg-[rgba(255,255,255,0.05)]">
+    **Service**
+    - Publication Design
+  </div>
+  </div>
+</div>
+</section>
+
+<ImageGridFull
+  singleImage={[
+    { src: '/project/fellow-wanderer/greenwald-fellow-wanderer-2.jpg', alt: 'fellow wanderer publication 1' },
+    { src: '/project/fellow-wanderer/greenwald-fellow-wanderer-3.jpg', alt: 'fellow wanderer publication 2' },
+  ]}
+/>
+
+<ImageGrid
+  images={[
+    { src: '/project/fellow-wanderer/greenwald-fellow-wanderer-4.jpg', alt: 'lenovo still 3' },
+    { src: '/project/fellow-wanderer/greenwald-fellow-wanderer-9.jpg', alt: 'lenovo still 2' },
+    { src: '/project/fellow-wanderer/greenwald-fellow-wanderer-7.jpg', alt: 'lenovo still 4' },
+  ]}
+/>
