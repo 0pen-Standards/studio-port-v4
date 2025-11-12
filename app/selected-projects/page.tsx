@@ -274,7 +274,7 @@ export default function SelectedProjects() {
           <MediaBlock>
             <Image
               src="/project/misc/nouhtrangthao-vice-waypoint.jpg"
-              alt="I-D AZLA"
+              alt="vice waypoint"
               width={1200}
               height={800}
               className="h-auto w-full object-cover"
@@ -283,6 +283,19 @@ export default function SelectedProjects() {
               Waypoint, Poster
             </p>
           </MediaBlock>
+                    <MediaBlock>
+            <Image
+              src="/project/misc/nouhtrangthao-adidas-power-02.jpg"
+              alt="adidas power"
+              width={1200}
+              height={800}
+              className="h-auto w-full object-cover"
+            />
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              Adidas, Portraits of Power, Insights Publication
+            </p>
+          </MediaBlock>
+
 
           <MediaBlock>
             <Image
