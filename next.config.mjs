@@ -4,9 +4,11 @@ import createMDX from '@next/mdx';
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-    images: {
+  images: {
     formats: ['image/avif', 'image/webp'], // ✅ serve modern formats
   },
+  // 🚫 Disable source maps in production to hide project folders in DevTools
+  productionBrowserSourceMaps: false,
 };
 
 const withMDX = createMDX({
