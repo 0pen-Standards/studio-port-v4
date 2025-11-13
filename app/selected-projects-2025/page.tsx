@@ -512,6 +512,18 @@ export default function SelectedProjects() {
               Chairs, Poster
             </p>
           </div>
+                    <div className="mx-auto w-full ">
+            <Image
+              src="/project/misc/nouhtrangthao-inreview_wordmark.png"
+              alt="sapporo east meets west"
+              width={1200}
+              height={800}
+              className="h-auto w-full object-cover invert"
+            />
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              Inreview, Identity
+            </p>
+          </div>
           <div className="mx-auto w-3/5">
             <Image
               src="/project/misc/nouhtrangthao-jerome.png"
