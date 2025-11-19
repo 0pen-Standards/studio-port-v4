@@ -224,7 +224,7 @@ export default function SelectedProjects() {
             <GoogleDriveEmbed fileId="1NGTovHYnt_DTAF40ia-xtC17cu-w7tmj" />
           </MediaBlock>
 
-          <div className="flex flex-wrap justify-center pb-5">
+          <div className="flex flex-wrap justify-center">
             {['olla-image-1.png', 'olla-image-7.png', 'olla-image-3.png'].map(
               (img, i) => (
                 <div key={i} className="w-1/3">
@@ -238,7 +238,16 @@ export default function SelectedProjects() {
                 </div>
               ),
             )}
-            <p className="mt-2 text-center text-sm text-zinc-400">
+          </div>
+          <div className="mx-auto w-1/3">
+            <Image
+              src={`/project/olla/olla-image-12.png`}
+              alt="Olla still 6"
+              width={1200}
+              height={800}
+              className="h-auto w-full object-cover"
+            />
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               Only Lovers Left Alive Workshop, Lara Mimosa Montes, Identity
             </p>
           </div>
@@ -512,7 +521,7 @@ export default function SelectedProjects() {
               Chairs, Poster
             </p>
           </div>
-                    <div className="mx-auto w-full ">
+          <div className="mx-auto w-full">
             <Image
               src="/project/misc/nouhtrangthao-inreview_wordmark.png"
               alt="sapporo east meets west"
