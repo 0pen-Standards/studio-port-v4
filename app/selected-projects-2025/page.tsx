@@ -89,8 +89,7 @@ export default function SelectedProjects() {
                 launching brands and products for tech and retail companies,
                 designing publications and editorial experiences with cultural
                 institutions, developing digital platforms for startups and
-                artists, and creating campaigns and pitches that engage
-                audiences while delivering measurable impact for stakeholders.
+                artists, and creating campaigns and pitches.
               </p>
               <br></br>
 
