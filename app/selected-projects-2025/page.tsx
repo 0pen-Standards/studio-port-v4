@@ -350,6 +350,24 @@ export default function SelectedProjects() {
             </p>
           </MediaBlock>
 
+                 <MediaBlock>
+            <GoogleDriveEmbed fileId="1uf82CP6ITd3WK90KVyB0bhalC4l0fcXA" />
+          </MediaBlock>
+
+                  <MediaBlock>
+            <Image
+              src="/project/misc/DSG-cover.jpg"
+              alt="adidas power"
+              width={1200}
+              height={800}
+              className="h-auto w-full object-cover pt-5"
+            />
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              DICK’S Sporting Goods, Logo Animation
+
+            </p>
+          </MediaBlock>
+
           <MediaBlock>
             <Image
               src="/project/id/I-D-AZLA.webp"
