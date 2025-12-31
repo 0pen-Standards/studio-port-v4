@@ -86,9 +86,7 @@ export default function SelectedProjects() {
                 with brands and organizations on projects that range from global
                 campaigns and culturally grounded initiatives alike—always
                 driven by insight, curiosity, and craft. My work includes
-                launching brands and products for tech and retail companies,
-                designing publications and editorial experiences with cultural
-                institutions, developing digital platforms for startups and
+                branding, designing publications and editorial experiences with cultural institutions, developing digital platforms for startups and
                 artists, and creating campaigns and pitches.
               </p>
               <br></br>
