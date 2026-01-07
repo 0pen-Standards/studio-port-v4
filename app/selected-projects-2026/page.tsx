@@ -8,7 +8,6 @@ import { PlusIcon } from 'lucide-react'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { BLOG_POSTS, EMAIL } from '../dataList'
 import GoogleDriveEmbed from '@/components/GoogleDriveEmbed'
-import { redirect } from 'next/navigation';
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -68,20 +67,6 @@ export default function SelectedProjects() {
     }
   }
 
-
-const CURRENT_YEAR = 2026;
-
-export default function SelectedProjectsPage({
-  params,
-}: {
-  params: { year: string };
-}) {
-  const year = Number(params.year);
-
-  // Redirect any non-current year to the current year
-  if (year !== CURRENT_YEAR) {
-    redirect(`/selected-projects/${CURRENT_YEAR}`);
-  }
   return (
     <motion.main
       className="space-y-24"
