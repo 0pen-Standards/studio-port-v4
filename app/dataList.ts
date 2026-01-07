@@ -18,7 +18,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Lenovo Hybrid AI',
     description:
       'Transform Vision into Value—Fast.',
-    link: '/selected-projects-2025/posts/lenovo',
+    link: '/selected-projects-2026/posts/lenovo',
     uid: 'blog-100',
   },
       {
@@ -26,7 +26,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Crossover Health',
     description:
       'Putting Care Back into Healthcare',
-    link: '/selected-projects-2025/posts/crossover-health',
+    link: '/selected-projects-2026/posts/crossover-health',
     uid: 'blog-99',
   },
 
@@ -35,7 +35,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'We Are King',
     description:
       'A six-part original series spotlights New York City’s Martin Luther King High School soccer team',
-    link: '/selected-projects-2025/posts/we-are-king',
+    link: '/selected-projects-2026/posts/we-are-king',
     uid: 'blog-98',
   },
       {
@@ -43,7 +43,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Aescape',
     description:
       'Revolutionizing wellness with AI-powered massage technology',
-    link: '/selected-projects-2025/posts/aescape',
+    link: '/selected-projects-2026/posts/aescape',
     uid: 'blog-97',
   },
          {
