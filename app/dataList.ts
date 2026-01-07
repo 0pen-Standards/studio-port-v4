@@ -51,7 +51,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Fellow Wanderer: Isabella Stewart Gardner’s Travel Albums',
     description:
       'Fellow Wanderer brings together nearly thirty of Gardner’s striking travelogues, spanning some thirty-nine countries and offering invaluable perspective on the global influences on this legendary collector and patron of the arts.',
-    link: '/selected-projects-2025/posts/fellow-wanderer',
+    link: '/selected-projects-2026/posts/fellow-wanderer',
     uid: 'blog-95',
   },
     {
@@ -59,7 +59,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'EA Sports — Madden NFL ’23',
     description:
       'Clean Athletes Get Their Moment',
-    link: '/selected-projects-2025/posts/ea-games',
+    link: '/selected-projects-2026/posts/ea-games',
     uid: 'blog-93',
   },
       {
@@ -67,28 +67,28 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'SZA, Amex Unstaged',
     description:
       '',
-    link: '/selected-projects-2025/posts/sza',
+    link: '/selected-projects-2026/posts/sza',
     uid: 'blog-91',
   },
    {
     image: '/project/investigation-night/vice_tv_investigation_night_styleframe-01.avif',
     title: 'Investigation Night',
     description: 'A never-before-seen sides of true crime stories and the people behind them',
-    link: '/selected-projects-2025/posts/investigation-night',
+    link: '/selected-projects-2026/posts/investigation-night',
     uid: 'blog-89',
   },
      {
     image: '/project/new-realities-main/new-realities-UK.jpg',
     title: 'New Realities',
     description: 'Raising awareness about global social issues and empower empathy through technology',
-    link: '/selected-projects-2025/posts/new-realities',
+    link: '/selected-projects-2026/posts/new-realities',
     uid: 'blog-88',
   },
   {
     image: '/project/nrc/nike-nrc-blue-hero.png',
     title: 'Nike Run Club',
     description: 'Coaches series on guides you thru motion patterns that assist right some frequent working errors',
-    link: '/selected-projects-2025/posts/nrc',
+    link: '/selected-projects-2026/posts/nrc',
     uid: 'blog-87',
   },
   {
@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Take The Podium',
     description:
       'Clean Athletes Get Their Moment',
-    link: '/selected-projects-2025/posts/take-the-podium',
+    link: '/selected-projects-2026/posts/take-the-podium',
     uid: 'blog-86',
   },
     {
@@ -104,7 +104,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'Nike: Sport Changes Everything',
     description:
       'The stories of the iconic NYC courts and the community it fosters',
-    link: '/selected-projects-2025/posts/sport-changes-everything',
+    link: '/selected-projects-2026/posts/sport-changes-everything',
     uid: 'blog-1',
   },
 ]
