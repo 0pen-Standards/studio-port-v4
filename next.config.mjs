@@ -19,6 +19,11 @@ const nextConfig = {
         destination: '/selected-projects-2026',
         permanent: true, // 308 redirect (SEO-friendly)
       },
+           {
+        source: '/selected-projects-:year(\\d{4})/posts/:slug*',
+        destination: '/selected-projects-2026/posts/:slug*',
+        permanent: true,
+      },
     ];
   },
 };
