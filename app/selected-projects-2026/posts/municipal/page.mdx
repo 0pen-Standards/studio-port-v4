@@ -1,0 +1,58 @@
+import { ImageGrid } from '@/components/ImageGrid'
+import { ImageGridFull } from '@/components/ImageGridFull'
+import Image from 'next/image'
+
+export const metadata = {
+  title: 'Municipal',
+  description:
+    'The MUNICIPAL team approached us with the need for a new 30-second TV spot to launch their brand into the stratosphere.',
+  alternates: {
+    canonical: '/selected-projects/projects/municipal',
+  },
+}
+
+# Municipal
+
+<section className="grid md:grid-cols-2 gap-8 my-8">
+  <div className="bg-[rgba(255,255,255,0.05)]">
+The MUNICIPAL team approached us with the need for a new 30-second TV spot to launch their brand into the stratosphere. They were immensely proud of their athlete ambassadors, who not only invested in the brand but also embodied MUNICIPAL’s core philosophy of “finding comfort in discomfort.” We proposed expanding this concept: let's maximize our limited time with each athlete to create a compelling narrative about who they are, what they stand for, and how they align with MUNICIPAL’s brand ideals.
+\
+\
+The result? A captivating 30-second TV spot, individual 30-second features for each athlete, and ~3-minute mini-docs about all six athletes showcased in the spot. All accomplished with Duplex Deli’s trademark efficiency and storytelling expertise.
+\
+\
+The MUNICIPAL brand anthem features co-founder Mark Wahlberg, 2023 NFL Defensive Player of the Year Myles Garrett, 2023 U.S. Open Champion Wyndham Clark, global skateboard star Ryan Sheckler, 2x World Series Champion Alex Bregman, 2023 Pac 12 Gymnast of the Year Selena Harris, and renowned chef/restaurateur Ashish Alfred. 
+  </div>
+<div>
+  <div className="bg-[rgba(255,255,255,0.05)]">
+      **Production**
+    - Duplex Deli
+    \
+    \
+    **Service**
+   - Design/AD Pitch
+  </div>
+</div>
+</section>
+
+<div className="space-y-12">
+  {[
+    "-IJjygsvj9I",
+    "my1rQWzK59U",
+    "pCQLJ8DKJMw",
+    "2Rqa044Wfeo",
+    
+  ].map((id) => (
+    <div key={id} className="relative aspect-video w-full">
+      <iframe
+        className="absolute inset-0 h-full w-full"
+        src={`https://www.youtube.com/embed/${id}`}
+        title="Municipal Video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
+    </div>
+  ))}
+</div>

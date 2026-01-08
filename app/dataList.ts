@@ -46,6 +46,14 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/selected-projects-2026/posts/aescape',
     uid: 'blog-97',
   },
+           {
+    image: '/project/municipal/municipal-ashish-alfred.jpg',
+    title: 'MUNICIPAL: Brand Anthems',
+    description:
+      'A new 30-second TV spot to launch their brand into the stratosphere. They were immensely proud of their athlete ambassadors, who not only invested in the brand but also embodied MUNICIPAL’s core philosophy of “finding comfort in discomfort.”',
+    link: '/selected-projects-2026/posts/municipal',
+    uid: 'blog-200',
+  },
          {
     image: '/project/fellow-wanderer/greenwald-fellow-wanderer-2.jpg',
     title: 'Fellow Wanderer: Isabella Stewart Gardner’s Travel Albums',
