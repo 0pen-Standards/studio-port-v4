@@ -82,12 +82,7 @@ export default function SelectedProjects() {
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
               <p>
-                With a focus in design, art direction, and strategy, partnered
-                with brands and organizations on projects that range from global
-                campaigns and culturally grounded initiatives alike—always
-                driven by insight, curiosity, and craft. My work includes
-                branding, designing publications and editorial experiences with cultural institutions, developing digital platforms for startups and
-                artists, and creating campaigns and pitches.
+            With a focus on design, art direction, and strategy, I’ve partnered with brands and organizations on projects ranging from global campaigns to culturally grounded initiatives—always driven by insight, curiosity, and craft. My work spans brand identities, publications and editorial experiences for cultural institutions, digital platforms for startups and artists, and high-impact campaigns and pitch development.
               </p>
               <br></br>
 
