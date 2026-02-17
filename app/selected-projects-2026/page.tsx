@@ -100,7 +100,7 @@ export default function SelectedProjects() {
             </div>
           </div>
           <div className="bg-[rgba(255,255,255,0.05)]">
-            <h3 className="mb-5 text-lg font-medium">Expereinces</h3>
+            <h3 className="mb-5 text-lg font-medium">Experiences</h3>
             <p>
               2022—Present&nbsp;&nbsp;Freelancer
               <br />
