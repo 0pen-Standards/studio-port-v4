@@ -356,7 +356,7 @@ export default function SelectedProjects() {
               className="h-auto w-full object-cover pt-5"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
-              DICK’S Sporting Goods in-house apparel brand DSG, Logo Animation
+              DICK’S Sporting Goods in-house apparel brand DSG, <a href="https://www.mythology.com/project/dsg" target="_blank" className="underline">Mythology</a> Logo Animation
 
             </p>
           </MediaBlock>
