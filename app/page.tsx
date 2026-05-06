@@ -25,7 +25,7 @@ export default function Home() {
    <main className='font-main'>
         <div className="text-sm tracking-tight text-zinc-600">
           <h1 className="bg-zinc-200 w-fit">Nouhtrang Thao</h1>
-          <p className="bg-zinc-400 w-fit">Available to collaborate: contact@nouhtrang.com</p>
+          <p className="bg-zinc-400 w-fit">Available to collaborate: thao.nouhtrang@gmail.com</p>
         </div>
       </main>
   );
