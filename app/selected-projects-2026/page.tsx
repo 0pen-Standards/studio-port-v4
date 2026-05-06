@@ -344,7 +344,7 @@ export default function SelectedProjects() {
           </MediaBlock>
 
                  <MediaBlock>
-            <GoogleDriveEmbed fileId="1uf82CP6ITd3WK90KVyB0bhalC4l0fcXA" />
+            <GoogleDriveEmbed fileId="19QYpHaEofTEXmAr0bIWSPdpG8uz_wuJb" />
           </MediaBlock>
 
                   <MediaBlock>
@@ -375,7 +375,7 @@ export default function SelectedProjects() {
           </MediaBlock>
 
           <MediaBlock>
-            <GoogleDriveEmbed fileId="1RPtwX1plWAtfaTg5OFyuKiKEo2sY372d" />
+            <GoogleDriveEmbed fileId="1adLw5Zft2y-kylx__MtIRxiSga4DB5vq" />
           </MediaBlock>
           <div className="mx-auto w-full">
             <Image
