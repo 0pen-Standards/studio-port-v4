@@ -118,4 +118,4 @@ export const BLOG_POSTS: BlogPost[] = [
 ]
 
 
-export const EMAIL = 'contact@nouhtrang.com'
+export const EMAIL = 'thao.nouhtrang@gmail.com'

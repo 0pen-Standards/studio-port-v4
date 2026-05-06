@@ -107,7 +107,15 @@ export const BLOG_POSTS: BlogPost[] = [
     link: '/selected-projects/posts/sport-changes-everything',
     uid: 'blog-1',
   },
+      {
+    image: '/project/future-now',
+    title: 'Future Now',
+    description:
+      'Exploring the female gaze through self-portraiture.',
+    link: '/selected-projects/posts/future-now',
+    uid: 'blog-100',
+  },
 ]
 
 
-export const EMAIL = 'contact@nouhtrang.com'
+export const EMAIL = 'thao.nouhtrang@gmail.com'
