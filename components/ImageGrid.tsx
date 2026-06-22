@@ -10,6 +10,7 @@ export function ImageGrid({ images }: { images: { src: string; alt: string }[] }
             alt={alt}
             width={1200}
             height={800}
+            sizes="(max-width: 768px) 100vw, 33vw"
             className="w-full h-auto object-cover"
           />
         </div>

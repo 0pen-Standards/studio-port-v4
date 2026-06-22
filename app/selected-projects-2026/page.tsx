@@ -35,6 +35,7 @@ const FullWidthImage = ({ src, alt }: { src: string; alt: string }) => (
       alt={alt}
       width={1200}
       height={800}
+      sizes="100vw"
       className="h-auto w-full object-cover"
     />
   </div>
@@ -82,7 +83,7 @@ export default function SelectedProjects() {
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
               <p>
-            With a focus on design, art direction, and strategy, I’ve partnered with brands and organizations on projects ranging from global campaigns to culturally grounded initiatives—always driven by insight, curiosity, and craft. My work spans brand identities, publications and editorial experiences for cultural institutions, digital platforms for startups and artists, and high-impact campaigns and pitch development.
+          Working at the intersection of design, art direction, and strategy, I've partner with brands and organizations to shape compelling narratives, build distinctive identities, and create meaningful audience engagement. My experience spans global campaigns, culturally relevant initiatives, brand systems, editorial and publication design, digital experiences, and business development efforts. Across disciplines, I bring a strategic perspective and a commitment to thoughtful, impactful creative work.
               </p>
               <br></br>
 
@@ -191,8 +192,8 @@ export default function SelectedProjects() {
                             src={post.image}
                             alt={post.title}
                             fill
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="object-cover object-top"
-                            unoptimized
                           />
                         </div>
                         <h4 className="font-normal text-zinc-400">
@@ -225,6 +226,7 @@ export default function SelectedProjects() {
                     alt={`Olla still ${i + 1}`}
                     width={1200}
                     height={800}
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="h-auto w-full object-cover"
                   />
                 </div>
@@ -237,6 +239,7 @@ export default function SelectedProjects() {
               alt="Olla still 6"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -250,6 +253,7 @@ export default function SelectedProjects() {
               alt="Palm NFT Studio branding"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full scroll-pb-0.5 object-cover"
             />
           </MediaBlock>
@@ -260,6 +264,7 @@ export default function SelectedProjects() {
               alt="palm brandguide"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover"
             />
           </div>
@@ -273,6 +278,7 @@ export default function SelectedProjects() {
                     alt={`palm nft studio socials still ${i + 1}`}
                     width={1200}
                     height={800}
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="h-auto w-full object-cover"
                   />
                 </div>
@@ -288,6 +294,7 @@ export default function SelectedProjects() {
               alt="palm brandguide"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -298,6 +305,7 @@ export default function SelectedProjects() {
               alt="palm brandguide"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -310,6 +318,7 @@ export default function SelectedProjects() {
               alt="vice waypoint"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -323,6 +332,7 @@ export default function SelectedProjects() {
               alt="palm brandguide"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -336,6 +346,7 @@ export default function SelectedProjects() {
               alt="adidas power"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -353,6 +364,7 @@ export default function SelectedProjects() {
               alt="adidas power"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover pt-5"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -367,6 +379,7 @@ export default function SelectedProjects() {
               alt="I-D AZLA"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -383,6 +396,7 @@ export default function SelectedProjects() {
               alt="g league give and go"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover
               mt-2 pt-5 "
             />
@@ -399,6 +413,7 @@ export default function SelectedProjects() {
                     alt={`ttr still ${i + 1}`}
                     width={1200}
                     height={800}
+                    sizes="100vw"
                     className="h-auto w-full object-cover"
                   />
                 </div>
@@ -414,6 +429,7 @@ export default function SelectedProjects() {
               alt="sapporo east meets west"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover mt-2 pb-5 "
             />
                    <Image
@@ -421,6 +437,7 @@ export default function SelectedProjects() {
               alt="sapporo east meets west 2"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -434,6 +451,7 @@ export default function SelectedProjects() {
               alt="jerome"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -446,6 +464,7 @@ export default function SelectedProjects() {
               alt="jerome"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover"
             />
           </div>
@@ -466,6 +485,7 @@ export default function SelectedProjects() {
                     alt={`ttr still ${i + 1}`}
                     width={1200}
                     height={800}
+                    sizes="100vw"
                     className="h-auto w-full object-cover"
                   />
                 </div>
@@ -483,6 +503,7 @@ export default function SelectedProjects() {
               alt="Nouhtrangthao Carla"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -510,6 +531,7 @@ export default function SelectedProjects() {
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
             />
                    <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -523,6 +545,7 @@ export default function SelectedProjects() {
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 66vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -536,6 +559,7 @@ export default function SelectedProjects() {
               alt="ces 1"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover mt-2 pb-5 "
             />
   <div className="grid grid-cols-2 gap-4">
@@ -544,6 +568,7 @@ export default function SelectedProjects() {
       alt="ces 2"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -552,6 +577,7 @@ export default function SelectedProjects() {
       alt="ces 3"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -561,6 +587,7 @@ export default function SelectedProjects() {
       alt="ces 4"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -569,6 +596,7 @@ export default function SelectedProjects() {
       alt="ces 5"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
   </div>
@@ -584,6 +612,7 @@ export default function SelectedProjects() {
               alt="TTR Auction Guide"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -596,6 +625,7 @@ export default function SelectedProjects() {
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 66vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -611,6 +641,7 @@ export default function SelectedProjects() {
               alt="chair"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -623,6 +654,7 @@ export default function SelectedProjects() {
               alt="sapporo east meets west"
               width={1200}
               height={800}
+              sizes="100vw"
               className="h-auto w-full object-cover invert"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -635,6 +667,7 @@ export default function SelectedProjects() {
               alt="jerome"
               width={1200}
               height={800}
+              sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
@@ -648,6 +681,7 @@ export default function SelectedProjects() {
       alt="beta-1"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -656,6 +690,7 @@ export default function SelectedProjects() {
       alt="beta-2"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -665,6 +700,7 @@ export default function SelectedProjects() {
       alt="beta-1"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
 
@@ -673,6 +709,7 @@ export default function SelectedProjects() {
       alt="beta-2"
       width={1200}
       height={800}
+      sizes="(max-width: 768px) 100vw, 50vw"
       className="h-auto w-full object-cover"
     />
   </div>

@@ -35,11 +35,11 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Header />
       <body
         suppressHydrationWarning
         className={`${tf.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
+        <Header />
         <ThemeProvider
           enableSystem={true}
           attribute="class"

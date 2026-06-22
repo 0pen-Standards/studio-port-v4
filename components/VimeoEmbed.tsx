@@ -22,6 +22,7 @@ const VimeoEmbed = ({ videoId, title }: VimeoEmbedProps) => {
         frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
         referrerPolicy="strict-origin-when-cross-origin"
+        loading="lazy"
         className="absolute top-0 left-0 w-full h-full"
         title={title}
       ></iframe>

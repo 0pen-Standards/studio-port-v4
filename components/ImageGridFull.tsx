@@ -10,6 +10,7 @@ export function ImageGridFull({ singleImage }: { singleImage: { src: string; alt
             alt={alt}
             width={1200}
             height={800}
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-auto object-cover"
           />
         </div>

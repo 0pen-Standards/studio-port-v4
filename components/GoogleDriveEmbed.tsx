@@ -13,6 +13,7 @@ const GoogleDriveEmbed = ({ fileId, title = "Google Drive Video" }: GoogleDriveE
         allow="autoplay"
         allowFullScreen
         title={title}
+        loading="lazy"
         className="absolute top-0 left-0 w-full h-full border-none"
       ></iframe>
     </div>
