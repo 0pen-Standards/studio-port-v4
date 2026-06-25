@@ -82,7 +82,7 @@ export const BLOG_POSTS: BlogPost[] = [
     image: '/project/investigation-night/vice_tv_investigation_night_styleframe-01.avif',
     title: 'Investigation Night',
     description: 'A never-before-seen sides of true crime stories and the people behind them',
-    link: '/selected-projects-2026/posts/Investigation-night',
+    link: '/selected-projects-2026/posts/investigation-night',
     uid: 'blog-89',
   },
      {
