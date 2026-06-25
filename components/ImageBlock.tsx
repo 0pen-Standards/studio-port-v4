@@ -18,7 +18,7 @@ const ImageBlock: React.FC<ImageBlockProps> = ({
   className = 'h-auto w-full object-cover ',
 }) => (
   <figure>
-    <Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 768px) 100vw, 768px" className={className} loading="lazy" />
+    <Image src={src} alt={alt} width={width} height={height} sizes="(max-width: 768px) 100vw, 768px" className={className} loading="lazy" draggable={false} />
     {caption && (
       <figcaption className="mt-2 text-center text-sm text-gray-600">{caption}</figcaption>
     )}

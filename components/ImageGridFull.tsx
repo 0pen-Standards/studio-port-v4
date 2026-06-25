@@ -12,6 +12,7 @@ export function ImageGridFull({ singleImage }: { singleImage: { src: string; alt
             height={800}
             sizes="(max-width: 768px) 100vw, 50vw"
             className="w-full h-auto object-cover"
+            draggable={false}
           />
         </div>
       ))}
