@@ -1,6 +1,7 @@
 'use client'
 import { AnimatePresence, motion } from 'motion/react'
 import { useRef, useState } from 'react'
+import { useMediaQuery } from '@/hooks/useMediaQuery'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Cursor } from '@/components/motion-primitives/cursor'
@@ -57,6 +58,7 @@ const MediaBlock = ({
 
 export default function SelectedProjects() {
   const [isHovering, setIsHovering] = useState(false)
+  const isMobile = useMediaQuery('(max-width: 767px)')
   const targetRef = useRef<HTMLDivElement>(null)
 
   const handlePositionChange = (x: number, y: number) => {
@@ -123,45 +125,47 @@ export default function SelectedProjects() {
       </motion.section>
 
       <div className="flex w-full items-center justify-center">
-        <Cursor
-          attachToParent
-          variants={{
-            initial: { scale: 0.3, opacity: 0 },
-            animate: { scale: 1.2, opacity: 1 },
-            exit: { scale: 0.3, opacity: 0 },
-          }}
-          springConfig={{
-            bounce: 0.001,
-          }}
-          transition={{
-            ease: 'easeInOut',
-            duration: 0.15,
-          }}
-          onPositionChange={handlePositionChange}
-        >
-          <motion.div
-            animate={{
-              width: isHovering ? 80 : 16,
-              height: isHovering ? 32 : 16,
+        {!isMobile && (
+          <Cursor
+            attachToParent
+            variants={{
+              initial: { scale: 0.3, opacity: 0 },
+              animate: { scale: 1.2, opacity: 1 },
+              exit: { scale: 0.3, opacity: 0 },
             }}
-            className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+            springConfig={{
+              bounce: 0.001,
+            }}
+            transition={{
+              ease: 'easeInOut',
+              duration: 0.15,
+            }}
+            onPositionChange={handlePositionChange}
           >
-            <AnimatePresence>
-              {isHovering ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.6 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.6 }}
-                  className="inline-flex w-full items-center justify-center"
-                >
-                  <div className="inline-flex items-center text-sm text-white dark:text-black">
-                    View <PlusIcon className="ml-1 h-4 w-4" />
-                  </div>
-                </motion.div>
-              ) : null}
-            </AnimatePresence>
-          </motion.div>
-        </Cursor>
+            <motion.div
+              animate={{
+                width: isHovering ? 80 : 16,
+                height: isHovering ? 32 : 16,
+              }}
+              className="flex items-center justify-center bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+            >
+              <AnimatePresence>
+                {isHovering ? (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.6 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.6 }}
+                    className="inline-flex w-full items-center justify-center"
+                  >
+                    <div className="inline-flex items-center text-sm text-white dark:text-black">
+                      View <PlusIcon className="ml-1 h-4 w-4" />
+                    </div>
+                  </motion.div>
+                ) : null}
+              </AnimatePresence>
+            </motion.div>
+          </Cursor>
+        )}
         <div ref={targetRef}>
           <motion.section
             variants={VARIANTS_SECTION}
@@ -169,11 +173,12 @@ export default function SelectedProjects() {
           >
             {/* <h3 className="mb-3 text-lg font-medium">Blog</h3> */}
             <div className="w-screen px-4">
+              
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {BLOG_POSTS.map((post) => (
                   <Link
                     key={post.uid}
-                    className="cursor-none rounded-xl"
+                    className={`${!isMobile ? 'cursor-none' : ''} rounded-xl`}
                     href={post.link}
                     data-id={post.uid}
                   >
@@ -195,6 +200,13 @@ export default function SelectedProjects() {
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             className="object-cover object-top"
                           />
+                          {isMobile && (
+                            <div className="absolute right-0 top-0 p-4">
+                              <div className="inline-flex items-center text-sm p-2 bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40 text-white dark:text-black z-10">
+                                View <PlusIcon className="ml-1 h-4 w-4" />
+                              </div>
+                            </div>
+                          )}
                         </div>
                         <h4 className="font-normal text-zinc-400">
                           {post.title}
