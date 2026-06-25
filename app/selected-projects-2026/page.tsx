@@ -44,7 +44,7 @@ const FullWidthImage = ({ src, alt }: { src: string; alt: string }) => (
 
 const MediaBlock = ({
   children,
-  width = 'w-3/5',
+  width = 'w-full md:w-3/5',
   justify = 'justify-center',
 }: {
   children: React.ReactNode

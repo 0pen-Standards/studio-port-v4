@@ -7,7 +7,7 @@ type GoogleDriveEmbedProps = {
 
 const GoogleDriveEmbed = ({ fileId, title = "Google Drive Video" }: GoogleDriveEmbedProps) => {
   return (
-    <div className="relative w-full pt-[56.25%]">
+    <div className="not-prose relative w-full overflow-hidden pt-[56.25%]">
       <iframe
         src={`https://drive.google.com/file/d/${fileId}/preview`}
         allow="autoplay"
