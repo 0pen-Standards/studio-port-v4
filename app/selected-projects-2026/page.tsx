@@ -8,7 +8,9 @@ import { Cursor } from '@/components/motion-primitives/cursor'
 import { PlusIcon } from 'lucide-react'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 import { BLOG_POSTS, EMAIL } from '../dataList'
-import GoogleDriveEmbed from '@/components/GoogleDriveEmbed'
+
+const BLUR_IMG =
+  'data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+PHJlY3Qgd2lkdGg9JzEwMCUnIGhlaWdodD0nMTAwJScgZmlsbD0nJTIzMjcyNzJhJy8+PC9zdmc+'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -33,6 +35,9 @@ const FullWidthImage = ({ src, alt }: { src: string; alt: string }) => (
   <div className="w-full">
     <Image
       src={src}
+      loading="lazy"
+      placeholder="blur"
+      blurDataURL={BLUR_IMG}
       alt={alt}
       width={1200}
       height={800}
@@ -85,7 +90,7 @@ export default function SelectedProjects() {
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
               <p>
-          Working at the intersection of design, art direction, and strategy, I've partnered with brands and organizations to shape compelling narratives, build distinctive identities, and create meaningful audience engagement. My experience spans global campaigns, culturally relevant initiatives, brand systems, editorial and publication design, digital experiences, and business development efforts. Across disciplines, I bring a strategic perspective and a commitment to thoughtful, impactful creative work.
+                Working at the intersection of design, art direction, and strategy, I've partnered with brands and organizations to shape compelling narratives, build distinctive identities, and create meaningful audience engagement. My experience spans global campaigns, culturally relevant initiatives, brand systems, editorial and publication design, digital experiences, and business development efforts. Across disciplines, I bring a strategic perspective and a commitment to thoughtful, impactful creative work.
               </p>
               <br></br>
 
@@ -173,7 +178,7 @@ export default function SelectedProjects() {
           >
             {/* <h3 className="mb-3 text-lg font-medium">Blog</h3> */}
             <div className="w-screen px-4">
-              
+
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {BLOG_POSTS.map((post) => (
                   <Link
@@ -195,6 +200,9 @@ export default function SelectedProjects() {
                         <div className="relative aspect-[16/9] w-full overflow-hidden bg-zinc-800">
                           <Image
                             src={post.image}
+                            loading="lazy"
+                            placeholder="blur"
+                            blurDataURL={BLUR_IMG}
                             alt={post.title}
                             fill
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -225,16 +233,23 @@ export default function SelectedProjects() {
         transition={TRANSITION_SECTION}
       >
         <>
-          <MediaBlock>
-            <GoogleDriveEmbed fileId="1zfjUYdFz4f7Wkdhd3FxrapYh9cACgrW0" />
-          </MediaBlock>
-
+          <div className="flex flex-wrap justify-center w-md mx-auto">
+            <video controls controlsList="nodownload">
+              <source
+                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNSPkeI7dOIJt6Qo8UGlPcur7jCRYBvysLKM1W"
+                type="video/mp4"
+              />
+            </video>
+          </div>
           <div className="flex flex-wrap justify-center">
             {['olla-image-1.png', 'olla-image-7.png', 'olla-image-3.png'].map(
               (img, i) => (
                 <div key={i} className="w-1/3">
                   <Image
                     src={`/project/olla/${img}`}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={BLUR_IMG}
                     alt={`Olla still ${i + 1}`}
                     width={1200}
                     height={800}
@@ -248,6 +263,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-1/3">
             <Image
               src={`/project/olla/olla-image-12.png`}
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="Olla still 6"
               width={1200}
               height={800}
@@ -262,17 +280,24 @@ export default function SelectedProjects() {
           <MediaBlock>
             <Image
               src="/project/palm-nft/image/palm-nft.gif"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="Palm NFT Studio branding"
               width={1200}
               height={800}
               sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full scroll-pb-0.5 object-cover"
+              unoptimized
             />
           </MediaBlock>
 
           <div className="mx-auto w-full">
             <Image
               src="/project/misc/nouhtrangthao-palmnftstudio-brandguide.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="palm brandguide"
               width={1200}
               height={800}
@@ -287,6 +312,9 @@ export default function SelectedProjects() {
                 <div key={i} className="w-1/2">
                   <Image
                     src={`/project/misc/${img}`}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={BLUR_IMG}
                     alt={`palm nft studio socials still ${i + 1}`}
                     width={1200}
                     height={800}
@@ -303,6 +331,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-full">
             <Image
               src="/project/vice/VICE-BRAND-UPDATE.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="palm brandguide"
               width={1200}
               height={800}
@@ -314,6 +345,9 @@ export default function SelectedProjects() {
             </p>
             <Image
               src="/project/vice/VICE-MEDIA-GROUP-BRAND-UPDATE.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="palm brandguide"
               width={1200}
               height={800}
@@ -327,6 +361,9 @@ export default function SelectedProjects() {
           <MediaBlock>
             <Image
               src="/project/misc/nouhtrangthao-vice-waypoint.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="vice waypoint"
               width={1200}
               height={800}
@@ -341,6 +378,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-full">
             <Image
               src="/project/misc/bullish-toolkit.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="palm brandguide"
               width={1200}
               height={800}
@@ -355,6 +395,9 @@ export default function SelectedProjects() {
           <MediaBlock>
             <Image
               src="/project/misc/nouhtrangthao-adidas-power-02.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="adidas power"
               width={1200}
               height={800}
@@ -366,13 +409,21 @@ export default function SelectedProjects() {
             </p>
           </MediaBlock>
 
-                 <MediaBlock>
-            <GoogleDriveEmbed fileId="19QYpHaEofTEXmAr0bIWSPdpG8uz_wuJb" />
-          </MediaBlock>
+          <div className="flex flex-wrap justify-center w-2xl mx-auto">
+            <video controls controlsList="nodownload">
+              <source
+                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNUrbnH13CBjuUNA0inzKTah3c8ybfGptISHMd"
+                type="video/webm"
+              />
+            </video>
+          </div>
 
-                  <MediaBlock>
+          <MediaBlock>
             <Image
               src="/project/misc/DSG-cover.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="adidas power"
               width={1200}
               height={800}
@@ -388,6 +439,9 @@ export default function SelectedProjects() {
           <MediaBlock>
             <Image
               src="/project/id/I-D-AZLA.webp"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="I-D AZLA"
               width={1200}
               height={800}
@@ -398,13 +452,20 @@ export default function SelectedProjects() {
               iD A—Z of LA, Identity
             </p>
           </MediaBlock>
-
-          <MediaBlock>
-            <GoogleDriveEmbed fileId="1adLw5Zft2y-kylx__MtIRxiSga4DB5vq" />
-          </MediaBlock>
+          <div className="flex flex-wrap justify-center w-2xl mx-auto">
+            <video controls controlsList="nodownload">
+              <source
+                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNUrbnH13CBjuUNA0inzKTah3c8ybfGptISHMd"
+                type="video/webm"
+              />
+            </video>
+          </div>
           <div className="mx-auto w-full">
             <Image
               src="/project/give-and-go/g-league-give-and-go.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="g league give and go"
               width={1200}
               height={800}
@@ -422,6 +483,9 @@ export default function SelectedProjects() {
                 <div key={i}>
                   <Image
                     src={`/project/ttr/ttr-14/${img}`}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={BLUR_IMG}
                     alt={`ttr still ${i + 1}`}
                     width={1200}
                     height={800}
@@ -438,19 +502,26 @@ export default function SelectedProjects() {
           <div className="mx-auto w-full">
             <Image
               src="/project/misc/sapporo-title.jpeg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="sapporo east meets west"
               width={1200}
               height={800}
               sizes="100vw"
               className="h-auto w-full object-cover mt-2 pb-5 "
             />
-                   <Image
+            <Image
               src="/project/misc/Sapporo EastMeetsWest_EP1_GIF_1.gif"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="sapporo east meets west 2"
               width={1200}
               height={800}
               sizes="100vw"
               className="h-auto w-full object-cover"
+              unoptimized
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               Sapporo East Meets West, Campaign Branding, Social Assets. Campaign <a href="https://tv.booooooom.com/2019/07/26/branded-east-meets-west-koharu-sugawara-matt-vega/" target="_blank" className="underline">Video 🔗</a>
@@ -460,11 +531,15 @@ export default function SelectedProjects() {
           <div className="mx-auto w-3/5">
             <Image
               src="/project/misc/nouhtrangthao-vice-offsite.gif"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="jerome"
               width={1200}
               height={800}
               sizes="(max-width: 768px) 100vw, 60vw"
               className="h-auto w-full object-cover"
+              unoptimized
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               VICE Offsite
@@ -473,6 +548,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-full pb-5">
             <Image
               src="/project/misc/nouhtrangthao-the-north-face-hero.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="jerome"
               width={1200}
               height={800}
@@ -481,12 +559,17 @@ export default function SelectedProjects() {
             />
           </div>
 
-          <MediaBlock>
-            <GoogleDriveEmbed fileId="1MfGoI838gjjjivhLdz8py1mNBm2djxDJ" />
+          <div className="flex flex-wrap justify-center w-2xl mx-auto">
+            <video controls controlsList="nodownload">
+              <source
+                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNOIXc5N1bf0xteKYJEvphWj9sAgiPodHLD7ma"
+                type="video/webm"
+              />
+            </video>
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               The North Face—The Invisible Wall, Campaign Branding, Motion
             </p>
-          </MediaBlock>
+          </div>
 
           <div className="w-full">
             {['ttr-issue-13-covers.png', 'ttr-issue-13-pages.png'].map(
@@ -494,6 +577,9 @@ export default function SelectedProjects() {
                 <div key={i}>
                   <Image
                     src={`/project/ttr/ttr-update/${img}`}
+                    loading="lazy"
+                    placeholder="blur"
+                    blurDataURL={BLUR_IMG}
                     alt={`ttr still ${i + 1}`}
                     width={1200}
                     height={800}
@@ -508,15 +594,18 @@ export default function SelectedProjects() {
             </p>
           </div>
 
-        
           <MediaBlock width="w-1/3">
             <Image
               src="/project/ttr/nouhtrangthao-ttr-carla.gif"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="Nouhtrangthao Carla"
               width={1200}
               height={800}
               sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
+              unoptimized
             />
             <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
               The Third Rail Issue 12 Promo
@@ -534,26 +623,32 @@ export default function SelectedProjects() {
               src={`/project/ttr/${img}`}
               alt={`TTR issue image ${i + 1}`}
             />
-            
+
           ))}
-        
-                        <div className="mx-auto w-1/3">
+
+          <div className="mx-auto w-1/3">
             <Image
               src="/project/ttr/issue 10-presscheck.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
               sizes="(max-width: 768px) 100vw, 33vw"
               className="h-auto w-full object-cover"
             />
-                   <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
-               The Third Rail Issue 11
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              The Third Rail Issue 11
             </p>
           </div>
 
-             <div className="mx-auto w-2/3">
+          <div className="mx-auto w-2/3">
             <Image
               src="/project/ttr/ttr-materialfair-poster.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
@@ -565,62 +660,80 @@ export default function SelectedProjects() {
             </p>
           </div>
 
-                <div className="mx-auto w-full">
-                          <Image
+          <div className="mx-auto w-full">
+            <Image
               src="/project/vice/ces/vice-ces-0.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="ces 1"
               width={1200}
               height={800}
               sizes="100vw"
               className="h-auto w-full object-cover mt-2 pb-5 "
             />
-  <div className="grid grid-cols-2 gap-4">
-    <Image
-      src="/project/vice/ces/vice-ces-1.jpg"
-      alt="ces 2"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src="/project/vice/ces/vice-ces-1.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="ces 2"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    <Image
-      src="/project/vice/ces/vice-ces-2.jpg"
-      alt="ces 3"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+              <Image
+                src="/project/vice/ces/vice-ces-2.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="ces 3"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    {/* Optional placeholders or additional content */}
-      <Image
-      src="/project/vice/ces/vice-ces-4.jpg"
-      alt="ces 4"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+              {/* Optional placeholders or additional content */}
+              <Image
+                src="/project/vice/ces/vice-ces-4.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="ces 4"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    <Image
-      src="/project/vice/ces/vice-ces-5.jpg"
-      alt="ces 5"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
-  </div>
+              <Image
+                src="/project/vice/ces/vice-ces-5.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="ces 5"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
+            </div>
 
-  <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
-    VICE CES Suite, Over 100 print assets, Print Production
-  </p>
-</div>
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              VICE CES Suite, Over 100 print assets, Print Production
+            </p>
+          </div>
 
           <MediaBlock>
             <Image
               src="/project/ttr/ttr-auction-guide.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="TTR Auction Guide"
               width={1200}
               height={800}
@@ -631,9 +744,12 @@ export default function SelectedProjects() {
               The Third Rail Auction, Identity, Publication
             </p>
           </MediaBlock>
-                    <div className="mx-auto w-2/3">
+          <div className="mx-auto w-2/3">
             <Image
               src="/project/misc/nouhtrangthao-the_rodina.jpg"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="TTR Material Fair Poster"
               width={1200}
               height={800}
@@ -645,11 +761,14 @@ export default function SelectedProjects() {
             </p>
           </div>
 
-       
+
 
           <div className="mx-auto w-1/3">
             <Image
               src="/project/misc/nouhtrangthao-chair.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="chair"
               width={1200}
               height={800}
@@ -663,6 +782,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-full">
             <Image
               src="/project/misc/nouhtrangthao-inreview_wordmark.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="sapporo east meets west"
               width={1200}
               height={800}
@@ -676,6 +798,9 @@ export default function SelectedProjects() {
           <div className="mx-auto w-3/5">
             <Image
               src="/project/misc/nouhtrangthao-jerome.png"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL={BLUR_IMG}
               alt="jerome"
               width={1200}
               height={800}
@@ -686,50 +811,62 @@ export default function SelectedProjects() {
               Jerome Foundation Fellowships, Exhibition
             </p>
           </div>
-                <div className="mx-auto w-full">
-  <div className="grid grid-cols-2 gap-4">
-    <Image
-      src="/project/misc/nouhtrangthao-beta-mock.jpg"
-      alt="beta-1"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+          <div className="mx-auto w-full">
+            <div className="grid grid-cols-2 gap-4">
+              <Image
+                src="/project/misc/nouhtrangthao-beta-mock.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="beta-1"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    <Image
-      src="/project/misc/nouhtrangthao-betaspread.jpg"
-      alt="beta-2"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+              <Image
+                src="/project/misc/nouhtrangthao-betaspread.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="beta-2"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    {/* Optional placeholders or additional content */}
-      <Image
-      src="/project/misc/nouhtrangthao-betaspread2.jpg"
-      alt="beta-1"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
+              {/* Optional placeholders or additional content */}
+              <Image
+                src="/project/misc/nouhtrangthao-betaspread2.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="beta-1"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
 
-    <Image
-      src="/project/misc/nouhtrangthao-betaspread3.jpg"
-      alt="beta-2"
-      width={1200}
-      height={800}
-      sizes="(max-width: 768px) 100vw, 50vw"
-      className="h-auto w-full object-cover"
-    />
-  </div>
+              <Image
+                src="/project/misc/nouhtrangthao-betaspread3.jpg"
+                loading="lazy"
+                placeholder="blur"
+                blurDataURL={BLUR_IMG}
+                alt="beta-2"
+                width={1200}
+                height={800}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="h-auto w-full object-cover"
+              />
+            </div>
 
-  <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
-    BETA v.1, Publication
-  </p>
-</div>
+            <p className="mt-2 pb-5 text-center text-sm text-zinc-400">
+              BETA v.1, Publication
+            </p>
+          </div>
         </>
       </motion.section>
     </motion.main>
