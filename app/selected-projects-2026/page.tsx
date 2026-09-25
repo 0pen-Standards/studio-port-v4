@@ -455,7 +455,7 @@ export default function SelectedProjects() {
           <div className="flex flex-wrap justify-center w-2xl mx-auto">
             <video controls controlsList="nodownload">
               <source
-                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNUrbnH13CBjuUNA0inzKTah3c8ybfGptISHMd"
+                src="https://v12ibifu44.ufs.sh/f/2gU7EH8B6GXNjCUbo9pxMTqSni805IlPb7KftOJp9NeU6QXH"
                 type="video/webm"
               />
             </video>
