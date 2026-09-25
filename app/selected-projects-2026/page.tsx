@@ -90,7 +90,7 @@ export default function SelectedProjects() {
           <div>
             <div className="bg-[rgba(255,255,255,0.05)]">
               <p>
-                Working at the intersection of design, art direction, and strategy, I've partnered with brands and organizations to shape compelling narratives, build distinctive identities, and create meaningful audience engagement. My experience spans global campaigns, culturally relevant initiatives, brand systems, editorial and publication design, digital experiences, and business development efforts. Across disciplines, I bring a strategic perspective and a commitment to thoughtful, impactful creative work.
+                Working across the disciplines of design and art direction. Collaborating with brands and organizations to shape narratives, build distinctive identities, and create meaningful audience engagement.
               </p>
               <br></br>
 
