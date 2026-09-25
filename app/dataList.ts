@@ -87,7 +87,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
      {
     image: '/project/new-realities-main/new-realities-UK.jpg',
-    title: 'New Realities',
+    title: 'Lenovo: New Realities',
     description: 'Raising awareness about global social issues and empower empathy through technology',
     link: '/selected-projects-2026/posts/new-realities',
     uid: 'blog-88',
